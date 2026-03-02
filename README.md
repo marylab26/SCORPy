@@ -1,9 +1,7 @@
 <p align="center">
-  <img src="resources/SCORPy_full.png" alt="SCORPy Logo"/>
+  <img src="resources/SCORPy_full.png" alt="SCORPy Logo" />
 </p>
 
-<h1 align="center">SCORPy</h1>
-<h3 align="center">Single-Cell proteOmics Research Platform</h3>
 
 <p align="center">
   A standalone, code-free desktop application for end-to-end analysis of<br/>
