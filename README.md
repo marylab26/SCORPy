@@ -84,27 +84,32 @@ Your project directory **must** contain two subfolders:
 
 ```
 your_project/
-├── data/                  # Raw CSV files (post-segmentation)
-│   ├── sample_01.csv
-│   ├── sample_02.csv
-│   └── ...
-├── metadata/              # Metadata files
-│   ├── ometif.csv         # OME-TIFF (exposure times) — recommended
-│   └── annotations.csv    # Clinical annotations — optional
+  ├── data/                  # Raw CSV files (post-segmentation)
+  │   ├── sample01.csv
+  │   ├── sample02.csv
+  │   └── ...
+  ├── metadata/              # Metadata files
+  │   ├── ometif.csv         # OME-TIFF (exposure times) — recommended
+  │   └── annotations.csv    # Clinical annotations — optional
 ```
 
-Once the project path is set, SCORPy auto-creates output directories:
+Once the project path is set, SCORPy auto-creates output directories (`init/`, `cleaning/`, `normalization/`, `classification/`, `quantification/`, `figures/`):
 
 ```
 your_project/
-├── data/
-├── metadata/
-├── init/                  # Merged raw data
-├── cleaning/              # Cleaned data (per sample)
-├── normalization/         # Normalized data
-├── classification/        # Classified data
-├── quantification/        # Final exports with binary columns
-└── figures/               # Heatmaps, trees, plots
+  ├── data/
+  │   ├── sample01.csv
+  │   ├── sample02.csv
+  │   └── ...
+  ├── metadata/              
+  │   ├── ometif.csv         
+  │   └── annotations.csv    
+  ├── init/                  # Merged raw data
+  ├── cleaning/              # Cleaned data (per sample)
+  ├── normalization/         # Normalized data
+  ├── classification/        # Classified data
+  ├── quantification/        # Final exports with binary columns
+  └── figures/               # Heatmaps, trees, plots
 ```
 
 ### Supported Input Formats
