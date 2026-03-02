@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="resources/SCORPy_full.png" alt="SCORPy Logo" />
+  <img src="resources/SCORPy_full.png" alt="SCORPy Logo"/>
 </p>
 
 
