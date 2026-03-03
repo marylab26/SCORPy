@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="resources/SCORPy_full.png" alt="SCORPy Logo"/>
+  <img src="resources/SCORPy_git.png" alt="SCORPy Logo"/>
 </p>
 
 
@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey" alt="Platform"/>
 </p>
 
-## Graphical abstract
+## Graphical abstract / Workflow
 
 ```
 
@@ -23,7 +23,7 @@
 
 ## Table of Contents
 
-- [Graphical abstract](#graphical-abstract)
+- [Graphical abstract / Workflow](#graphical-abstract--workflow)
 - [Table of Contents](#table-of-contents)
 - [Overview](#overview)
   - [Key Features](#key-features)
@@ -42,17 +42,17 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 
 ### Key Features
 
-| Step | Tab | Description |
+| Module | Tab | Description |
 |------|-----|-------------|
-| 1 | **Project Settings** | Set working directory; auto-creates output folders |
-| 2 | **Input Files** | Import & merge raw CSVs, metadata, and annotations |
-| 3 | **Cleaning** | Quality control with quantile-based filtering and distribution plots |
-| 4 | **Normalization** | Background subtraction + modified z-score normalization |
-| 5 | **Thresholds** | Interactive dotplots with adjustable threshold sliders |
-| 6 | **Cell Classification** | Hierarchical decision tree for cell phenotyping |
-| 7 | **Marker Analysis** | Post-classification marker exploration and binary column creation |
-| 8 | **Quantification** | Cellular proportions, tissue area, and density calculations |
-| 9 | **Spatial Analysis** | Grid-based tissue partitioning & proximity mapping |
+| Settings | **Project Settings** | Set working directory; auto-creates output folders |
+| Settings | **Input Files** | Import & merge raw CSVs, metadata, and annotations |
+| Normalization | **Cleaning** | Quality control with quantile-based filtering and distribution plots |
+| Normalization | **Normalization** | Background subtraction + modified z-score normalization |
+| Classification | **Thresholds** | Interactive dotplots with adjustable threshold sliders |
+| Classification | **Cell Classification** | Hierarchical decision tree for cell phenotyping |
+| Analysis | **Marker Analysis** | Post-classification marker exploration and binary column creation |
+| Analysis | **Quantification** | Cellular proportions, tissue area, and density calculations |
+| Analysis | **Spatial Analysis** | Grid-based tissue partitioning & proximity mapping |
 
 ### Highlights
 
@@ -118,9 +118,10 @@ SCORPy auto-detects intensity column naming conventions:
 
 | Source | Column Pattern | Example |
 |--------|----------------|---------|
+| **Generic** | `Marker_Localization_Metric` | `CD3_Cell_Intensity_Average` |
 | **CycIF** | `Marker Localization Intensity Average` | `CD3 Cell Intensity Average` |
 | **CODEX** | `Marker: Localization: Mean` | `CD3: Cell: Mean` |
-| **Generic** | `Marker_Localization_Metric` | `CD3_Cell_Intensity_Average` |
+
 
 Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are recognized through an extensive alias list — see the **Instructions** tab in the app for full details.
 
