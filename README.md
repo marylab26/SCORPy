@@ -44,15 +44,16 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 
 | Module | Tab | Description |
 |------|-----|-------------|
-| Settings | **Project Settings** | Set working directory; auto-creates output folders |
-| Settings | **Input Files** | Import & merge raw CSVs, metadata, and annotations |
-| Preprocessing | **Cleaning** | Quality control with quantile-based filtering and distribution plots |
-| Preprocessing | **Normalization** | Background subtraction + modified z-score normalization |
-| Classification | **Thresholds** | Interactive dotplots with adjustable threshold sliders |
-| Classification | **Cell Classification** | Hierarchical decision tree for cell phenotyping |
-| Analysis | **Marker Analysis** | Post-classification marker exploration and binary column creation |
-| Analysis | **Quantification** | Cellular proportions, tissue area, and density calculations |
-| Analysis | **Spatial Analysis** | Grid-based tissue partitioning & proximity mapping |
+| Settings | 📍 **Instruction** | Global instructions and guidance |
+| Settings | ⚙️ **Project Settings** | Set working directory; auto-creates output folders |
+| Settings | 📂 **Input Files** | Import & merge raw CSVs, metadata, and annotations |
+| Preprocessing | 🧹 **Cleaning**  | Quality control with quantile-based filtering and distribution plots |
+| Preprocessing |🚧 **Normalization** | Background subtraction + modified z-score normalization |
+| Classification | ✂️ **Thresholds** | Interactive dotplots with adjustable threshold sliders |
+| Classification | 🎨 **Cell Classification** | Hierarchical decision tree for cell phenotyping |
+| Analysis | 🔎 **Marker Analysis** | Post-classification marker exploration and binary column creation |
+| Analysis | 📊 **Quantification** | Cellular proportions, tissue area, and density calculations |
+| Analysis | 🧊 **Spatial Analysis** | Grid-based tissue partitioning & proximity mapping |
 
 ### Highlights
 
