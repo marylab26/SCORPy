@@ -34,7 +34,7 @@
   - [Supported Input Formats](#supported-input-formats)
   - [Flexible Entry Points](#flexible-entry-points)
 - [License](#license)
-- [Citation](#citation)
+- [Citation \& Acknowledgments](#citation--acknowledgments)
 
 ## Overview
 
@@ -146,13 +146,22 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
-## Citation
+## Citation & Acknowledgments
 
 If you use SCORPy in your research, please cite:
 
 ```
 
 ```
+ 
+- **Scientific Method:** Pr. *Marilyne Labrie*  
+- **Developers:** *Zoé Gerber*, *Samuel Simard*, *Harshitha Kolipaka*
+- **Final Development & UX Polish:** *Zoé Gerber*   
+- **Contact:** [Marilyne Labrie](mailto:Marilyne.Labrie@USherbrooke.ca)
+- **HORBITUS platform:** [Learn more](https://www.usherbrooke.ca/medecine/recherche/notre-caractere-distinctif/infrastructure-et-plateformes-de-la-recherche/horbitus)  
+- **Documentation:**  Go see the **wiki** section
+- A (huge) thank to all the beta testers and Labrie Lab members who provided kind feedback to improve the platform (Zacharie Drouin, Juliane Sévigny, Violaine Pourcel, Celia Crespo)
+- A (special) thank to Zacharie Drouin for the awesome SCORPy logo !
 
 ---
 
