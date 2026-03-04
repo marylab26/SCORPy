@@ -5,7 +5,7 @@
 
 <p align="center">
   A standalone, code-free desktop application for end-to-end analysis of<br/>
-  Cyclic Immunofluorescence (CycIF) and CODEX multiplexed imaging data.
+  Cyclic Immunofluorescence (CycIF) and CO-Detection by indEXing (CODEX) multiplexed imaging data.
 </p>
 
 <p align="center">
@@ -46,8 +46,8 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 |------|-----|-------------|
 | Settings | **Project Settings** | Set working directory; auto-creates output folders |
 | Settings | **Input Files** | Import & merge raw CSVs, metadata, and annotations |
-| Normalization | **Cleaning** | Quality control with quantile-based filtering and distribution plots |
-| Normalization | **Normalization** | Background subtraction + modified z-score normalization |
+| Preprocessing | **Cleaning** | Quality control with quantile-based filtering and distribution plots |
+| Preprocessing | **Normalization** | Background subtraction + modified z-score normalization |
 | Classification | **Thresholds** | Interactive dotplots with adjustable threshold sliders |
 | Classification | **Cell Classification** | Hierarchical decision tree for cell phenotyping |
 | Analysis | **Marker Analysis** | Post-classification marker exploration and binary column creation |
@@ -58,7 +58,7 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 
 - **Code-free** — full GUI, no programming required
 - **No installation** — download and run the standalone executable
-- **Multi-format** — auto-detects CycIF, CODEX, CellProfiler, and QuPath column formats
+- **Multi-format** — auto-detects CycIF, PhenoCycler (former CODEX) column formats
 - **Scalable** — handles 500,000+ cells with memory-optimized processing
 - **Reproducible** — export/import classification trees (JSON) and thresholds (CSV)
 - **Cross-platform** — Windows, macOS, Linux
@@ -119,8 +119,8 @@ SCORPy auto-detects intensity column naming conventions:
 | Source | Column Pattern | Example |
 |--------|----------------|---------|
 | **Generic** | `Marker_Localization_Metric` | `CD3_Cell_Intensity_Average` |
-| **CycIF** | `Marker Localization Intensity Average` | `CD3 Cell Intensity Average` |
-| **CODEX** | `Marker: Localization: Mean` | `CD3: Cell: Mean` |
+| **CycIF** | `Marker Localization Metric` | `CD3 Cell Intensity Average` |
+| **CODEX** | `Marker: Localization: Metric` | `CD3: Cell: Mean` |
 
 
 Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are recognized through an extensive alias list — see the **Instructions** tab in the app for full details.
