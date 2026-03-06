@@ -17,9 +17,9 @@
 
 ## Graphical abstract / Workflow
 
-```
-
-```
+<p align="center">
+  <img src="resources/Graphical_abstract_SCORPy_workflow.png" alt="SCORPy workflow"/>
+</p>
 
 ## Table of Contents
 
