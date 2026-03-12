@@ -1,0 +1,86 @@
+{
+  "cell_tree": {
+    "nodes": [
+      {
+        "id": "2b3de075-1ff5-4f7b-952b-3d183ff7fda1",
+        "name": "Unknown cell",
+        "parent_id": null,
+        "is_default": false
+      },
+      {
+        "id": "d040c12e-78b4-43e5-afac-ccb524f7cb54",
+        "name": "ENDOTHELIAL",
+        "parent_id": "2b3de075-1ff5-4f7b-952b-3d183ff7fda1",
+        "is_default": false
+      },
+      {
+        "id": "cb84c5f5-dcd0-46cb-8d75-a8b20f8b8541",
+        "name": "IMMUNE",
+        "parent_id": "2b3de075-1ff5-4f7b-952b-3d183ff7fda1",
+        "is_default": false
+      },
+      {
+        "id": "fba2416b-6018-4d05-91b9-d536a20973af",
+        "name": "CANCER",
+        "parent_id": "2b3de075-1ff5-4f7b-952b-3d183ff7fda1",
+        "is_default": false
+      },
+      {
+        "id": "d65a22c5-d856-4004-b440-b088eb11c0bc",
+        "name": "STROMA",
+        "parent_id": "2b3de075-1ff5-4f7b-952b-3d183ff7fda1",
+        "is_default": true
+      }
+    ]
+  },
+  "cell_markers_data": {
+    "2b3de075-1ff5-4f7b-952b-3d183ff7fda1": {
+      "markers": {},
+      "color": "#ffffff"
+    },
+    "d040c12e-78b4-43e5-afac-ccb524f7cb54": {
+      "markers": {
+        "cd31": {
+          "threshold": 1.1,
+          "expressed": true,
+          "relations": null
+        }
+      },
+      "color": "#800080"
+    },
+    "cb84c5f5-dcd0-46cb-8d75-a8b20f8b8541": {
+      "markers": {
+        "cd45": {
+          "threshold": 1.3,
+          "expressed": true,
+          "relations": null
+        }
+      },
+      "color": "#ffff00"
+    },
+    "fba2416b-6018-4d05-91b9-d536a20973af": {
+      "markers": {
+        "cks": {
+          "threshold": 0.0,
+          "expressed": true,
+          "relations": [
+            {
+              "related_marker": "ecadb",
+              "relation_operator": "or"
+            }
+          ]
+        },
+        "ecadb": {
+          "threshold": 0.2,
+          "expressed": true,
+          "relations": null
+        }
+      },
+      "color": "#228b22"
+    },
+    "d65a22c5-d856-4004-b440-b088eb11c0bc": {
+      "markers": {},
+      "color": "#c2c2c2"
+    }
+  }
+}
