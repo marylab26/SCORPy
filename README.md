@@ -5,7 +5,7 @@
 
 <p align="center">
   A standalone, code-free desktop application for end-to-end analysis of<br/>
-  Cyclic Immunofluorescence (CycIF) and CO-Detection by indEXing (CODEX) multiplexed imaging data.
+  multiplexed imaging spatial single cell proteomics.
 </p>
 
 <p align="center">
@@ -20,6 +20,8 @@
 <p align="center">
   <img src="resources/Graphical_abstract_SCORPy_overview.PNG" alt="SCORPy workflow"/>
 </p>
+A. CycIF standard pipeline, generating raw single-cell data. </br>
+B. SCORPy workflow allowing data processing and analysis of multiplex single-cell proteomics data, via 4 modules (I. Settings, II. Preprocessing, III. Classification and IV. Analysis).
 
 ## Table of Contents
 
@@ -28,7 +30,7 @@
 - [Overview](#overview)
   - [Key Features](#key-features)
   - [Highlights](#highlights)
-- [Quick Start: Pre-built Executable](#quick-start-pre-built-executable)
+- [Super easy and quick start: Pre-built Executable](#super-easy-and-quick-start-pre-built-executable)
 - [Data Requirements](#data-requirements)
   - [Directory Structure](#directory-structure)
   - [Supported Input Formats](#supported-input-formats)
@@ -53,26 +55,27 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 | Classification | 🎨 **Cell Classification** | Hierarchical decision tree for cell phenotyping |
 | Analysis | 🔎 **Marker Analysis** | Post-classification marker exploration and binary column creation |
 | Analysis | 📊 **Quantification** | Cellular proportions, tissue area, and density calculations |
-| Analysis | 🧊 **Spatial Analysis** | Grid-based tissue partitioning & proximity mapping |
+| Analysis | 🧊 **Grid Analysis** | Grid-based tissue partitioning & proximity mapping |
+| Analysis | 🕸️ **Neighborhood Analysis** | Nearest neighbors & cellular niches |
 
 ### Highlights
 
 - **Code-free** — full GUI, no programming required
 - **No installation** — download and run the standalone executable
-- **Multi-format** — auto-detects CycIF, PhenoCycler (former CODEX) column formats
+- **Multi-format** — auto-detects CycIF, PhenoCycler (former CODEX) and Lunaphore (COMET) column formats datasets
 - **Scalable** — handles 500,000+ cells with memory-optimized processing
 - **Reproducible** — export/import classification trees (JSON) and thresholds (CSV)
-- **Cross-platform** — Windows, macOS, Linux
+- **Publication-ready** — export your figures to publish your results
+- **Cross-platform** — Windows, macOS
 
 ---
 
-## Quick Start: Pre-built Executable 
+## Super easy and quick start: Pre-built Executable 
 
 1. Download the latest release from the [Releases page](https://github.com/marylab26/SCORPy/releases)
-2. Run the executable:
-   - **Windows:** double-click `SCORPy.exe`
-   - **macOS / Linux:** `./SCORPy`
+2. Run the executable: double-click `SCORPy.exe` 
 3. The application opens in a desktop window — no browser needed
+4. Do your magic !
 
 
 ---
@@ -81,7 +84,7 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 
 ### Directory Structure
 
-Your project directory **must** contain two subfolders:
+Your project directory **must** contain two subfolders to start (`data/` and `metadata`, but they can be empty, just make sure they exist):
 
 ```
 your_project/
@@ -115,6 +118,11 @@ your_project/
 
 ### Supported Input Formats
 
+Each protein/intensity column needs 3 parts:
+- *Marker name* (example: `CD45`, `Ncadherin`, ...)
+- *Localization* (example: `Cell`, `Cytoplasm`, `Nucleus`, `Membrane`)
+- *Metric* (example: `Intensity Average`, `Expression`, `Mean`, ...)
+
 SCORPy auto-detects intensity column naming conventions:
 
 | Source | Column Pattern | Example |
@@ -122,9 +130,9 @@ SCORPy auto-detects intensity column naming conventions:
 | **Generic** | `Marker_Localization_Metric` | `CD3_Cell_Intensity_Average` |
 | **CycIF** | `Marker Localization Metric` | `CD3 Cell Intensity Average` |
 | **CODEX** | `Marker: Localization: Metric` | `CD3: Cell: Mean` |
+| **COMET** | `TODO` | `TODO` |
 
-
-Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are recognized through an extensive alias list — see the **Instructions** tab in the app for full details.
+Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are recognized through an extensive alias list — see the **Instructions** tab in the app or **wiki Alias** section for full details.
 
 ### Flexible Entry Points
 
