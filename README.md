@@ -45,7 +45,7 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 ### Key Features
 
 | Module | Tab | Description |
-|------|-----|-------------|
+|------|------|-------------------|
 | Settings | 📍 **Instruction** | Global instructions and guidance |
 | Settings | ⚙️ **Project Settings** | Set working directory; auto-creates output folders |
 | Settings | 📂 **Input Files** | Import & merge raw CSVs, metadata, and annotations |
