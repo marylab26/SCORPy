@@ -12,7 +12,7 @@
   <a href="https://github.com/marylab26/SCORPy/releases"><img src="https://img.shields.io/github/v/release/marylab26/SCORPy?label=latest%20release&color=blue" alt="Latest Release"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT"/></a>
   <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python 3.10+"/>
-  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey" alt="Platform"/>
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey" alt="Platform"/>
 </p>
 
 ## Graphical abstract / Workflow
