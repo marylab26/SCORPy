@@ -72,9 +72,11 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 
 ## Super easy and quick start: Pre-built Executable 
 
-1. Download the latest release from the [Releases page](https://github.com/marylab26/SCORPy/releases)
-2. Run the executable: double-click `SCORPy.exe` 
-3. The application opens in a desktop window — no browser needed
+1. Download the latest release from the [Releases page](https://github.com/marylab26/SCORPy/releases).
+2. Run the executable:
+     - **Windows**: Double-click `SCORPy.exe`
+     - **macOS**: Double-click `SCORPy.app`
+3. The application opens in a desktop window (you may need to allow it in System Preferences → Security & Privacy) — no browser needed.
 4. Do your magic !
 
 
