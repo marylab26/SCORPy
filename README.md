@@ -63,7 +63,7 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 
 - **Code-free** — full GUI, no programming required
 - **No installation** — download and run the standalone executable
-- **Multi-format** — auto-detects CycIF, PhenoCycler (former CODEX) and Lunaphore (COMET) column formats datasets
+- **Multi-platform** — supports datasets generated using CycIF, PhenoCycler (formerly CODEX), and Lunaphore COMET platforms
 - **Scalable** — handles 500,000+ cells with memory-optimized processing
 - **Reproducible** — export/import classification trees (JSON) and thresholds (CSV)
 - **Publication-ready** — export your figures to publish your results
@@ -92,7 +92,7 @@ xattr -dr com.apple.quarantine SCORPy.app
 ```
 Then try opening `SCORPy.app` again.
 
-**Note**: Only run these commands if you downloaded SCORPy from a trusted source, such as the official GitHub repository.
+> **Warning:** These commands remove macOS quarantine attributes from the application. Only use them if SCORPy was downloaded from the official GitHub repository (only trusted source).
 
 ---
 
@@ -156,7 +156,7 @@ Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are
 |-----------|----------|------|
 | Raw post-segmentation CSVs | **Input Files** | — |
 | Already normalized | **Thresholds** or **Cell Classification** | Cleaning + Normalization |
-| Already classified | **Marker Analysis**, **Quantification**, or **Spatial Analysis** | All preprocessing |
+| Already classified | **Marker Analysis**, **Quantification**, or **Grid and Neighborhood Analysis** | All preprocessing |
 
 
 ---
