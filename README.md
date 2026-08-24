@@ -31,6 +31,7 @@ B. SCORPy workflow allowing data processing and analysis of multiplex single-cel
   - [Key Features](#key-features)
   - [Highlights](#highlights)
 - [Super easy and quick start: Pre-built Executable](#super-easy-and-quick-start-pre-built-executable)
+  - [MacOS troubleshooting](#macos-troubleshooting)
 - [Data Requirements](#data-requirements)
   - [Directory Structure](#directory-structure)
   - [Supported Input Formats](#supported-input-formats)
@@ -79,6 +80,19 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 3. The application opens in a desktop window (you may need to allow it in System Preferences → Security & Privacy) — no browser needed.
 4. Do your magic !
 
+### MacOS troubleshooting
+
+If macOS displays a security warning or the application does not open (see image below), run the following commands in **Terminal** from the directory containing `SCORPy.app`:
+
+![alt text](image.png)
+
+```bash
+chmod +x SCORPy.app/Contents/MacOS/SCORPy
+xattr -dr com.apple.quarantine SCORPy.app
+```
+Then try opening `SCORPy.app` again.
+
+**Note**: Only run these commands if you downloaded SCORPy from a trusted source, such as the official GitHub repository.
 
 ---
 
