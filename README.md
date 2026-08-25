@@ -36,6 +36,7 @@ B. SCORPy workflow allowing data processing and analysis of multiplex single-cel
   - [Directory Structure](#directory-structure)
   - [Supported Input Formats](#supported-input-formats)
   - [Flexible Entry Points](#flexible-entry-points)
+- [Data availability](#data-availability)
 - [License](#license)
 - [Citation \& Acknowledgments](#citation--acknowledgments)
 
@@ -95,6 +96,8 @@ Then try opening `SCORPy.app` again.
 > **Warning:** These commands remove macOS quarantine attributes from the application. Only use them if SCORPy was downloaded from the official GitHub repository (only trusted source).
 
 ---
+
+
 
 ## Data Requirements
 
@@ -160,6 +163,12 @@ Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are
 
 
 ---
+
+## Data availability
+
+CHeck files on Zenodo : [10.5281/zenodo.22096493](https://zenodo.org/records/22096493).
+
+
 
 
 ## License
