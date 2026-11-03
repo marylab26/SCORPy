@@ -85,7 +85,7 @@ SCORPy provides a complete, guided analytical pipeline — from raw post-segment
 
 If macOS displays a security warning or the application does not open (see image below), run the following commands in **Terminal** from the directory containing `SCORPy.app`:
 
-![alt text](image.png)
+![alt text](/resources/MacOS_error.png)
 
 ```bash
 chmod +x SCORPy.app/Contents/MacOS/SCORPy
@@ -166,7 +166,7 @@ Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are
 
 ## Data availability and documentation
 
-Check test files on Zenodo at [10.5281/zenodo.22096493](https://zenodo.org/records/22096493) and documentation at [scorpy.readthedocs.io](https://scorpy.readthedocs.io/en/latest/#).
+Check test files on Zenodo at [10.5281/zenodo.22096493](https://zenodo.org/records/22096493) and documentation at [scorpy.readthedocs.io](https://scorpy.readthedocs.io/en/latest/).
 
 ## License
 

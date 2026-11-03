@@ -19,3 +19,9 @@ exclude_patterns = []
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
+html_logo = "../../resources/SCORPy_full_git.png"
+html_favicon = "../../resources/SCORPy_icon.png"
+html_theme_options = {
+    "logo_only": True,
+    "style_nav_header_background": "#ffffff",
+}
