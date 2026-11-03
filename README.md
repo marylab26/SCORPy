@@ -36,7 +36,7 @@ B. SCORPy workflow allowing data processing and analysis of multiplex single-cel
   - [Directory Structure](#directory-structure)
   - [Supported Input Formats](#supported-input-formats)
   - [Flexible Entry Points](#flexible-entry-points)
-- [Data availability](#data-availability)
+- [Data availability and documentation](#data-availability-and-documentation)
 - [License](#license)
 - [Citation \& Acknowledgments](#citation--acknowledgments)
 
@@ -164,12 +164,9 @@ Standard annotation columns (`Sample_ID`, `ROI_index`, `Nucleus_Size`, etc.) are
 
 ---
 
-## Data availability
+## Data availability and documentation
 
-CHeck files on Zenodo : [10.5281/zenodo.22096493](https://zenodo.org/records/22096493).
-
-
-
+Check test files on Zenodo at [10.5281/zenodo.22096493](https://zenodo.org/records/22096493) and documentation at [scorpy.readthedocs.io](https://scorpy.readthedocs.io/en/latest/#).
 
 ## License
 
