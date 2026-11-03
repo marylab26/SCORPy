@@ -1,3 +1,12 @@
+SCORPy Documentation
+====================
+
+.. toctree::
+   :maxdepth: 4
+
+   installation
+   Tutorial/index
+   
 SCORPy
 ======
 
