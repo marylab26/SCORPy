@@ -10,21 +10,26 @@ Select the working directory
 2. Select ``ctTMA_project`` as the working directory.
 3. Check that the expected output directories are created.
 
-.. admonition:: Screenshot to add
+.. admonition:: Make sure `data` and `metadata` directories are present, even if empty.
 
-   Capture Project Settings with the selected project and output directories.
-   Hide personal parts of the filesystem path.
+   If you ever modify the content of these directories, press again `Validate structure` to apply the changes. 
+   You will have to repeat some steps of your analysis if you modified the content of these directories.
+
+
+.. video:: ../../../resources/ctTMA_Projet_settings.mp4
+   :width: 100%
+   :align: center
+
+
 
 Import the raw table
 --------------------------------
 
-1. Open **Input Files** and select ``data/ctTMA_raw.csv``.
+1. Open **Input Files** and select ``data/ctTMA.csv`` (raw file).
 2. Review validation feedback and inspect the imported table.
 3. Check marker columns, spatial coordinates, and sample/ROI identifiers.
 
-Do not include ``ctTMA_classified.csv`` in this import. Record the imported
-row count and number of distinct sample/ROI combinations for comparison
-after filtering.
+
 
 Attach metadata
 ---------------
@@ -35,16 +40,32 @@ Attach metadata
 3. Review the sample and ROI join keys and choose the annotation columns.
 4. Inspect matched and unmatched rows before proceeding.
 
-.. admonition:: Screenshot to add
+.. csv-table:: ctTMA annotations file
+   :file: ../_static/ctTMA_annotations.csv
+   :header-rows: 1
+   :widths: auto
 
-   Capture the imported-table preview, exposure mapping, and annotation merge
-   report. Show the tissue labels and identifiers needed to understand the join.
+.. admonition:: Note
 
-Check before continuing
------------------------
+   Make sure the `Sample_ID` and `ROI_index` columns name and content correctly match the your raw data. 
+   Otherwise, the join between the raw data and annotations will fail.
+   If you work with whole tissue slides (or one ROI per slide), the `ROI_index` column is still required 
+   but you can fill this column with a default value, such as `0` or `1`.
 
-Confirm that the expected marker measurements and tissue annotations are
-available, and resolve unexpected unmatched identifiers. Save the import
-summary with your analysis records.
+
+.. csv-table:: ctTMA exposure time file
+   :file: ../_static/ctTMA.ome.tif.csv
+   :header-rows: 1
+   :widths: auto
+
+.. admonition:: Note
+
+   Only the `ChannelIndex`, `ExposureTime`, `Cycle` and `Name` columns are required in the exposure metadata file.
+
+
+.. video:: ../../../resources/ctTMA_Input_files.mp4
+   :width: 100%
+   :align: center
+
 
 **Next:** :doc:`preprocessing`. For input conventions, see :doc:`../settings`.

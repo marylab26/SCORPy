@@ -5,8 +5,39 @@ This tutorial follows the control tissue microarray (ctTMA) dataset published
 with SCORPy. Unlike the User guide, which explains individual features, this
 section takes you through a single analysis from downloaded files to results.
 
+We constructed a reference control TMA (ctTMA) composed of a diverse set of murine 
+normal and cancer tissues. The dataset comprising **40 proteins** measured across the **19 TMA tissue cores**. 
+Each ctTMA core was defined as a region of interest (ROI). Following image acquisition and registration, cell segmentation 
+was conducted. Tissue folds and other technical artefacts, including regions affected by uneven or inconsistent staining,
+were excluded from pre-segmentation. 
+Segmentation generated a raw single‑cell dataset comprising a total of **204,091** cells with per cell autofluorescence 
+and marker intensities, spatial coordinates, and associated metadata. 
 
-Download the example files
+The reference control TMA (ctTMA)
+--------------------------
+
+.. figure:: ../../../resources/ctTMA_HE.png
+    :alt: Control TMA H&E image
+    :width: 100%
+    :align: center
+    
+    ctTMA Hematoxylin & Eosin staining and ROI/tissue identification
+
+.. figure:: ../../../resources/ctTMA_AB_Panel.png
+    :alt: Control TMA antibody panel
+    :width: 50%
+    :align: center
+    
+    ctTMA Antibody Panel
+
+.. figure:: ../../../resources/ctTMA_segmentation_mask.png
+    :alt: Segmentation mask (QiTissue software)
+    :width: 100%
+    :align: center
+    
+    Segmentation mask (QiTissue software)
+
+Download the example input files
 --------------------------
 
 Open `Zenodo record 22096493 <https://zenodo.org/records/22096493>`_ and
@@ -60,10 +91,6 @@ The ``figures/`` folder is a tutorial organizational choice, not a required
 SCORPy directory at the start. Do not merge the raw and classified tables: they are
 alternative processing stages of the example.
 
-.. admonition:: Screenshot to add
-
-   Show the Zenodo file list and the prepared project directory. Keep
-   filenames visible, but hide personal paths.
 
 Choose a route
 --------------

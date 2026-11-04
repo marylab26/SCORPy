@@ -1,0 +1,20 @@
+﻿Sample_ID,ROI_index,Tissue,Area_mm2,Biological category
+ctTMA.csv,0,Ovarian tumor A,0.898,Cancer
+ctTMA.csv,1,Breast tumor,1.278,Cancer
+ctTMA.csv,2,Fallopian tube,1.046,Reproductive system
+ctTMA.csv,3,Liver,0.96,Digestive & Metabolic system
+ctTMA.csv,4,Epididymis,0.454,Reproductive system
+ctTMA.csv,5,Ovarian tumor B,0.692,Cancer
+ctTMA.csv,6,Uterus,1.174,Reproductive system
+ctTMA.csv,7,Ovary,1.2,Reproductive system
+ctTMA.csv,8,Intestin,0.448,Digestive & Metabolic system
+ctTMA.csv,9,Spleen,1.369,Immune & Lymphoid system
+ctTMA.csv,10,Brain,1.645,Nervous system & Structural tissues
+ctTMA.csv,11,Thymus,1.49,Immune & Lymphoid system
+ctTMA.csv,12,Brain,1.475,Nervous system & Structural tissues
+ctTMA.csv,13,Breast tumor,1.403,Cancer
+ctTMA.csv,14,Liver,1.003,Digestive & Metabolic system
+ctTMA.csv,15,Muscle,1.019,Nervous system & Structural tissues
+ctTMA.csv,16,Ovarian tumor A,0.586,Cancer
+ctTMA.csv,17,Ovarian tumor B,1.185,Cancer
+ctTMA.csv,18,Ovary,1.168,Reproductive system
