@@ -14,7 +14,8 @@ author = 'Zoé Gerber'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ["sphinxcontrib.video",
-              'sphinx_csv_tools']
+              'sphinx_csv_tools',
+              "sphinx_design"]
 templates_path = ["_templates"]
 exclude_patterns = []
 

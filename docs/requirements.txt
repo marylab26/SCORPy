@@ -2,3 +2,4 @@ sphinx
 sphinx-rtd-theme
 sphinxcontrib-video
 sphinx_csv_tools
+sphinx-design

@@ -7,8 +7,16 @@ Download and launch
 Download the application in a matter of seconds for your operating system from the
 `official releases <https://github.com/marylab26/SCORPy/releases>`_ page.
 
-* **Windows:** launch ``SCORPy.exe``.
-* **macOS:** launch ``SCORPy.app``.
+.. button-link:: https://github.com/marylab26/SCORPy/releases
+    :color: danger
+    :shadow:
+    :align: center
+
+    Download SCORPy software
+
+Then, depending on your operating system:   
+    * **Windows:** launch ``SCORPy.exe``.
+    * **macOS:** launch ``SCORPy.app``.
 
 The pre-built application does not require a separate Python installation.
 Keep the release version with your analysis records, on your desktop or anywhere you would store a software application.
