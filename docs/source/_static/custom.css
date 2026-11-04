@@ -1,0 +1,16 @@
+/* Justify body text (RTD theme) */
+.rst-content p,
+.rst-content li,
+.rst-content dd {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Keep tables, code, and headings left-aligned */
+.rst-content table p,
+.rst-content pre,
+.rst-content h1,
+.rst-content h2,
+.rst-content h3 {
+    text-align: left;
+}

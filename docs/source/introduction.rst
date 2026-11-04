@@ -16,12 +16,27 @@ Workflow and modules
 --------------------
 
 .. figure:: ../../resources/Graphical_abstract_SCORPy_overview.PNG
-   :alt: CycIF data generation followed by SCORPy's four analysis modules
-   :width: 100%
-   :align: center
+  :alt: CycIF data generation followed by SCORPy's four analysis modules
+  :width: 100%
+  :align: center
 
-   From multiplexed imaging and single-cell data extraction to SCORPy's
-   Settings, Preprocessing, Classification, and Analysis modules. A. CycIF typical experimental workflow. B. SCORPy workflow.
+  SCORPy end-to-end workflow.
+
+**(A) CycIF workflow overview.**
+Tissue sections from TMAs or whole-slide samples are subjected to iterative staining cycles using a designed antibody panel, 
+including an initial empty round to assess autofluorescence in each channel, followed by sequential image acquisition. 
+Images are then processed through registration, artefact identification and exclusion, cell segmentation, and extraction of single-cell 
+measurements to generate raw tabular datasets containing protein marker intensities, spatial coordinates, morphometric features, and sample metadata. Single-cell datasets are subsequently imported into SCORPy for data harmonization, preprocessing, quality control, and downstream single-cell and spatial analyses.
+
+**(B) SCORPy analytical workflow.**
+Input data, including raw, normalized, or pre-classified single-cell tables and associated metadata, 
+are organized within a standardized project structure. SCORPy accepts single-cell data tables exported from diverse image analysis segmentation 
+platforms in comma- or semicolon-separated formats. The pipeline comprises quality control, data cleaning and localization assessment, and 
+normalization. Cells are classified using user-defined marker thresholds based on a mutually exclusive gating strategy, 
+followed by hierarchical phenotyping. Downstream analyses include marker expression profiling, 
+spatial mapping, cell-type quantification, grid-based spatial analysis, and neighborhood characterization. 
+Publication-ready figures can be generated and exported along analysis parameters. 
+
 
 The interface groups the workflow into four modules:
 
@@ -33,28 +48,27 @@ The interface groups the workflow into four modules:
      - Tabs
      - Purpose
    * - Settings
-     - Instruction, Project Settings, Input Files
+     - Instructions 📍, Project Settings ⚙️, Input Files 📂
      - Configure a project and integrate data and metadata.
    * - Preprocessing
-     - Cleaning, Normalization
+     - Cleaning 🧹, Normalization 🚧
      - Inspect, filter, background-correct, and normalize intensities.
    * - Classification
-     - Thresholds, Cell Classification
+     - Thresholds ✂️, Cell Classification 🎨
      - Define marker positivity and a hierarchical phenotype library.
    * - Analysis
-     - Marker Analysis, Quantification, Grid Analysis, Neighborhood Analysis
+     - Marker Analysis 🔎, Quantification 📊, Grid Analysis 🧊, Neighborhood Analysis 🕸️
      - Summarize composition, expression, and tissue organization.
-
-The documentation separates quantitative analysis from spatial analysis
-while retaining the application's module and tab names.
 
 Scope and supported platforms
 -----------------------------
 
-SCORPy operates on data **after image registration and cell segmentation**.
-It does not replace those upstream image-processing steps. Digital tissue
-reconstructions display cell measurements at their coordinates; they are not
-the original fluorescence images.
+.. admonition:: Note
+
+   SCORPy operates on data **after image registration and cell segmentation**.
+   It does not replace those upstream image-processing steps. Digital tissue
+   reconstructions display cell measurements at their coordinates; they are not
+   the original fluorescence images.
 
 The platform provides Windows and macOS executables and compatibility with
 CycIF, PhenoCycler (formerly CODEX), and Lunaphore COMET datasets. Compatibility
