@@ -26,7 +26,8 @@ to the relevant workflow module.
    preprocessing
    classification
    analysis
-   spatial
+   grid
+   neighborhood
    exports
    reference
 

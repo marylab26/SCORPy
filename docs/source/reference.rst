@@ -77,6 +77,10 @@ Frequently asked questions
    No. Distances describe proximity to a target population; neighborhood
    clustering groups cells by the composition of their local surroundings.
 
+**Can I resume or reproduce an analysis?**
+   Yes, by using the exported tables and recording the relevant settings for each processing and analysis stage, 
+   like thresholds CSV files and phenotype trees JSON files (see :doc:`exports`).
+
 Citation, license, and support
 ------------------------------
 

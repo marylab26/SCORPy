@@ -65,5 +65,4 @@ absolute protein abundance. Check constant or otherwise uninformative
 markers before interpreting normalized measurements.
 
 
-**Outputs:** cleaned and normalized tables and quality-control figures.
 **Next:** :doc:`classification`.

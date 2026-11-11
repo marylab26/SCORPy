@@ -27,7 +27,8 @@ Single-cell tables and column names
 -----------------------------------
 
 Each row should describe a segmented cell. Depending on the intended
-analysis, for example working on TMA data, the table needs sample (slide) and Region of Interest (ROI) identifiers, marker intensities, and spatial coordinates (X, Y).
+analysis, for example working on TMA data, the table needs sample (slide) 
+and Region of Interest (ROI) identifiers, marker intensities, and spatial coordinates (X, Y) usually in pixels.
 
 Intensity columns encode a marker, localization, and measurement metric.
 Recognized naming examples:
@@ -71,7 +72,7 @@ match the fluorophore/channel and subcellular compartment.
 
 Use the exposure-time example associated with the manuscript or example
 dataset, and check its mapping against the imported columns. An incorrect mapping can change the corrected
-signal even when the file imports successfully.
+signal even when the file imports successfully. Exposure time are usually in milliseconds (ms).
 
 .. csv-table:: Exposure-time.csv or ometif.csv example
    :header: ChannelIndex, Cycle, Name, ExposureTime

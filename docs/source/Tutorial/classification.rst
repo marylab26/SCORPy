@@ -6,19 +6,25 @@ Set thresholds and classify cells
 Inspect marker thresholds
 -------------------------
 
-1. Open **Thresholds** and select a marker pair appropriate to your panel.
-2. Adjust positivity thresholds using the expression plots.
-3. Inspect positive cells in each selected tissue reconstruction.
-4. Compare with original fluorescence images when available.
+At this stage, you have likely completed the filtering and 
+normalization steps and saved the normalized data in the `normalization/` 
+folder (see :doc:`preprocessing`). 
+You can therefore import the normalized data directly and 
+proceed to inspect it and set the marker thresholds for cell classification.
 
-Save the threshold values and record the scale on which they were defined.
-The Zenodo file list does not include a separate threshold CSV; do not assume
-one is available or that loading a tree restores every threshold setting.
+.. video:: ../../../resources/ctTMA_Thresholds1.mp4
+   :width: 100%
+   :align: center
 
-.. admonition:: Screenshot to add
 
-   Show a marker pair with its thresholds and the corresponding tissue
-   reconstruction. Include marker names and the selected sample/ROI.
+
+Adjust positivity thresholds using the expression plots and inspect positive 
+cells in each selected tissue reconstruction.
+
+.. admonition:: Important
+
+   Compare with original fluorescence images when available. Don't forget to save the threshold values.
+
 
 Load and review the example tree
 --------------------------------

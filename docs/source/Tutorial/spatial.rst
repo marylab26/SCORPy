@@ -42,10 +42,4 @@ mandatory settings.
    Capture source/target selections and a distance plot, then neighborhood
    parameters, composition profiles, and the matching tissue map.
 
-Check before continuing
------------------------
-
-Confirm that results remain interpretable under reasonable parameter changes.
-Keep grid distances distinct from direct cell-to-cell distances.
-
 **Next:** :doc:`export`.

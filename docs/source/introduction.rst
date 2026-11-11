@@ -4,7 +4,7 @@ Introduction
 What is SCORPy?
 ---------------
 
-SCORPy provides an interactive workflow for multiplexed imaging spatial
+SCORPy (Single-Cell proteOmics Research Platform) provides an interactive workflow for multiplexed imaging spatial
 single-cell proteomics. It combines data import, quality control, signal
 normalization, rule-based cell phenotyping, and quantitative and spatial
 analysis in a desktop application.
@@ -72,5 +72,6 @@ Scope and supported platforms
 
 The platform provides Windows and macOS executables and compatibility with
 CycIF, PhenoCycler (formerly CODEX), and Lunaphore COMET datasets. Compatibility
-depends on the exported table structure, not only the imaging platform name.
+depends on the exported table structure.
+
 See :doc:`settings` before importing a new export format.

@@ -22,8 +22,10 @@ Download the application in a matter of seconds for your operating system (Windo
 The pre-built application does not require a separate Python installation.
 Keep the release version with your analysis records, on your desktop or anywhere you would store a software application.
 
-On macOS, if the application is blocked, you can use the following commands.
-Run them in Terminal from the directory containing ``SCORPy.app``:
+.. sidebar:: Troubleshooting macOS
+   
+   On macOS, if the application is blocked, you can use the following commands.
+   Run them in Terminal from the directory containing ``SCORPy.app``
 
 .. image:: ../../resources/MacOS_error.png
    :alt: macOS security warning for SCORPy

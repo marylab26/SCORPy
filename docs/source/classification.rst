@@ -6,12 +6,19 @@ Define marker positivity
 
 Load the dataset at the intended processing stage and open **Thresholds**.
 Use bivariate expression plots to examine separation between marker-positive
-and marker-negative populations, comparing mutually exclusive markers where
-biologically appropriate.
+and marker-negative populations, comparing **mutually exclusive markers** where
+biologically appropriate (example CD3 and N-cadherin markers expected to be mutually exclusive).
 
-Adjust each threshold while checking the highlighted cells. Record the data
-scale on which thresholds were defined: a threshold from normalized data
-cannot be applied directly to raw intensity values.
+Adjust each threshold while checking the highlighted cells. 
+
+.. figure:: ../../resources/ctTMA_ncadherin_cd3.png
+    :alt: N-cadherin thresholds in ctTMA dataset
+    :align: center
+
+    Scatterplot showing N-cadherin expression (x axis) and CD3 expression (y axis) 
+    in the ctTMA dataset. 
+    Red horizontal line indicates the N-cadherin threshold applied.
+    Selected threshold = 1.30
 
 Validate in tissue context
 --------------------------
@@ -20,9 +27,11 @@ Inspect marker-positive cells in the digital tissue reconstruction for
 individual samples and ROIs. Compare their locations with the original
 fluorescence images when available.
 
-Spillover, segmentation errors, and tissue autofluorescence can produce
-apparently positive cells. A visually separated population is not sufficient
-validation by itself.
+.. figure:: ../../resources/ctTMA_ncadherin_thresholding.png
+    :alt: N-cadherin thresholds in ctTMA dataset
+
+    Digital reconstruction showing N-cadherin-positive cells in the ctTMA dataset (left) and 
+    its real expression in the tissue (right). (Selected threshold = 1.30, see :doc:`classification` section 5.1)
 
 Build a phenotype library
 -------------------------
@@ -32,23 +41,43 @@ major compartments, then add subtypes using marker combinations.
 
 For example, an immune compartment can be defined using CD45 and then
 subdivided using lineage markers. These are dataset-specific biological
-rules, not universal phenotype definitions. Select markers and names
-appropriate to the tissue, species, and antibody panel.
+rules, not universal phenotype definitions.
 
 Review the classification on expression plots and tissue reconstructions,
 including cells assigned to default populations.
 
+
 Rule logic, priority, and defaults
 ----------------------------------
 
-When more than one marker is involved in a rule defining a phenotype, SCORPy evaluates the
-AND/OR marker conditions (OR by default) and depth-first, left-to-right traversal priority. 
-The first matching sibling rule takes priority; unmatched cells receive a configurable default label.
+When a phenotype rule includes multiple markers, 
+SCORPy evaluates them using AND or OR logic (OR is the default). 
 
-Consequently, overlapping rules can produce different assignments when
-reordered. Check sibling priority, default labels, and ambiguous marker
-combinations explicitly. Root-level classes represent cell types; deeper
-levels refine subtypes.
+For example, **immune cells** may be defined as CD3⁺ **OR** CD45⁺ cells, 
+while **regulatory T cells** may be defined as CD4⁺ **AND** FOXP3⁺ cells.
+Rules are traversed depth-first and left-to-right. 
+
+Among sibling rules, the first match takes priority. 
+Cells that match no rule receive the configured default label. 
+A default label is required to ensure that all cells are assigned a phenotype at each branch.
+
+Because overlapping rules can yield different assignments when reordered, 
+explicitly check sibling-rule priority, default labels, and ambiguous marker combinations. 
+
+.. note::
+    Example below illustrates a simple hierarchical phenotype tree.
+    Root-level classes represent **cell types** (Immune cells, Epithelial cells and Unclassified cells); 
+    deeper levels refine them into **cell subtypes** (Lymphocytes, Other immune cells, Epithelial cells and Unclassified cells).
+
+.. figure:: ../../resources/example_phenotype_tree.png
+
+Heatmaps
+--------------------------
+
+Visualize marker expression and phenotype assignments using heatmaps. 
+These can help identify patterns, validate classification rules, 
+and detect potential issues with marker thresholds, background correction, or rule logic.
+
 
 Save and reuse definitions
 --------------------------
@@ -57,9 +86,4 @@ Export thresholds and the phenotype tree, retaining them with the classified
 dataset and application version. Thresholds are saved in CSV
 format and classification trees in JSON format.
 
-Before reusing definitions, confirm the marker names, localization,
-processing scale, and biological context. Revalidate on the new dataset
-rather than assuming thresholds transfer unchanged.
-
-**Outputs:** classified cells, threshold definitions, and a reusable
-phenotype library. **Next:** :doc:`analysis` or :doc:`spatial`.
+**Next:** :doc:`analysis`.
