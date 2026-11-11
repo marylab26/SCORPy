@@ -1,7 +1,7 @@
-Spatial analysis
+Grid analysis
 ================
 
-Grid analysis : construction and region rules
+Construction and region rules
 ----------------------------------
 
 In **Grid Analysis**, choose a grid scale appropriate to the tissue. The
